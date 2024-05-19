@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>CREATE NEW PRODUCT</h2>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <h3>Create a New Product:</h3>
+
+      <form class="form new-project-form">
+        <div class="form-group row">
+          <label for="project-name">Product Name:</label>
+          <div class="col-sm-9">
+            <input class="form-control" type="text" id="project-name" name="project-name" />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-9 offset-sm-3">
+            <button type="submit" class="btn btn-primary">CREATE</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    {{#if products.length}}
+    <div class="col-md-6 project-list">
+      <h2 class="newprod">Current Products:</h2>
+      <table>
+      <div class="newproducts">
+      {{#each products as |product|}}
+      <div class="newprod2">
+        <div>
+          <h4><a href="/product/{{product.id}}">{{product.name}}</a></h4>
+          <p>{{product.location}}</p>
+          <p>{{user.name}}</p>
+        </div>
+        <div class="col-md-4">
+          <button data-id="{{product.id}}">DELETE</button>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    {{/if}}
+  </div>
+  </div>
+</div>
+
+<script>
+const newFormHandler = async (event) => {
+  event.preventDefault();
+
+  const name = document.querySelector('#project-name').value.trim();
+
+  if (name) {
+    const response = await fetch(`/api/products`, {
+      method: 'POST',
+      body: JSON.stringify({ name }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (response.ok) {
+      document.location.replace('/data');
+    } else {
+      alert('Failed to add product');
+    }
+  }
+};
+
+const delButtonHandler = async (event) => {
+  if (event.target.hasAttribute('data-id')) {
+    const id = event.target.getAttribute('data-id');
+
+    const response = await fetch(`/api/products/${id}`, {
+      method: 'DELETE',
+    });
+
+    console.log(response.status);
+
+    const responseBody = await response.text();
+    console.log(responseBody); 
+
+    if (response.ok) {
+      
+      if (response.status === 200) {
+        // Product was successfully deleted
+        document.location.reload();
+      } else {
+        // Product was not found
+        alert('Product not found');
+      }
+    } else {
+      // Other error occurred
+      alert('Failed to delete product');
+    }
+  }
+};
+
+
+
+document
+  .querySelector('.new-project-form')
+  .addEventListener('submit', newFormHandler);
+
+/*document
+  .querySelector('.project-list')
+  .addEventListener('click', delButtonHandler);*/
+
+  const projectList = document.querySelector('.project-list');
+  if (projectList) {
+    projectList.addEventListener('click', delButtonHandler);
+  }
+</script>

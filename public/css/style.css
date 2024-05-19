@@ -1,0 +1,312 @@
+body{
+	text-align: center;
+	font-family: "davis-sans", sans-serif;
+	font-weight: 500;
+	color: #1b3b6b;
+	font-style: normal;
+	margin: 0 auto 0;
+	padding-top: 0px;
+}
+
+main {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+h3 {
+	font-family: "davis-sans", sans-serif;
+	font-size: 16px;
+	color: white;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.newproducts h4 a {
+	font-family: "davis-sans", sans-serif;
+	font-size: 16px;
+	color:#5774b9;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.newprod2 {
+	border: solid;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav img {
+	position: absolute;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+.prod-data {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.prod-data h2 {
+	padding-left: 10px;
+	font-size: 26px;
+}
+
+textarea {
+	height: 100px;
+	width: 350px;
+	
+}
+
+.editmaster{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+		
+}
+
+.edit1{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+.edit2 {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	justify-content: center;
+	align-items: flex-start;
+	
+}
+
+.edit3 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+.edit4 {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	align-items: flex-start;
+}
+
+.navlistleft {
+	float: left;
+}
+
+.navlistleft li a {
+	color:#f2b833;
+}
+
+.navlistleft li a:hover,
+:visited {
+	color:#d8a628;
+}
+
+.navlistright {
+	float: right;
+	display: flex;
+	align-items: center;
+}
+
+.navlistright h1 {
+	float: left;
+	color: white;
+	padding-right: 5px;
+}
+
+
+header .topnav {
+	background-color: #4b76bb;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+
+}
+
+nav ul {
+	margin-left: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+nav li a {
+	text-decoration: none;
+}
+
+nav li {
+	text-decoration: none;
+	display: inline-block;
+	color: #fdc82b;
+	position: relative;
+	padding: 10px;
+}
+
+nav li:hover, :visited  {
+	color: #d8a628;
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead{
+	background-color: #dae2ec;
+}
+
+th,
+td {
+	border: 1px solid #dddddd;
+	padding:12px;
+}
+
+td a:hover,
+:visited {
+	color: #1b3b6b;
+	cursor: pointer;
+}
+
+td a {
+	color: #5774b9;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.newprod h2 {
+	color:#1b3b6b
+
+}
+
+.newproducts {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+  .print-button {
+  	position: fixed;
+  	bottom: 20px;
+  	right: 20px;
+  }
+
+  tr:nth-child(even) {
+  	background-color: #f2f2f2;
+  }
+
+p {
+	font-family: "davis-sans", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.form-group {
+	padding: 10px;
+	border-radius: 10px;
+	position: relative;
+	/* overflow-y: scroll; */
+}
+
+.start-time {
+	padding: 10px;
+}
+
+.duration-length {
+	padding: 10px;
+}
+
+.start {
+	text-align: center;
+}
+
+
+label {
+  	font-size: 16px;
+  	text-align: left;
+	display: flex;
+	flex-direction: column;
+	color: #1b3b6b;
+
+  }
+
+#technician {
+	padding-top: 10px;	
+	padding-bottom: 10px;
+	padding-right: 175px;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #5774b9;
+	border-radius: 8px;
+
+}
+
+  input {
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	padding-right: 150px;
+  	font-size: 20px;
+  	border-style: solid;
+  	border-width: 2px;
+  	border-color: #5774b9;
+  	border-radius: 8px;
+  }
+
+  .register {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+ 
+
+  #role-signup {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 277px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #5774b9;
+	border-radius: 8px;
+  }
+
+  button {
+	background-color: #f2b833;
+	color: #1b3b6b;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: "davis-sans", sans-serif;
+  }
+
+	a {
+		text-decoration: none;
+	}

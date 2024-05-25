@@ -21,7 +21,7 @@ To install the required dependencies, navigate to your terminal and enter "npm i
 Right-click on the "server.js" file and select "Open in Integrated Terminal". Type "mysql -u root -p" and press enter. Enter MySQL password and press enter. Type "source db/schema.sql" and press enter. Type "exit" and press enter. Type "npm run seed" and press enter. To initiate application, type "node server.js" and press enter.
 
 ## The following video demonstrates the application's appearance and functionality
-![Coming Soon]()
+![Webpage titled "Time Tracker" featuring a Dashboard displaying the progress of items being manufactured.](https://github.com/Meowlory3579/time-tracker/blob/main/public/assets/ProductionTracker.gif)
 
 ## URL for deployed application
 Coming Soon

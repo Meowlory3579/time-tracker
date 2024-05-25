@@ -14,15 +14,15 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // technician: {
-    //   type: DataTypes.STRING,
-    //   allowNull: true,
-    // },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     comment: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    location: {
+    status: {
       type: DataTypes.STRING,
       allowNull: true,
     },

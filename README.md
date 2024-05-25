@@ -24,7 +24,7 @@ Right-click on the "server.js" file and select "Open in Integrated Terminal". Ty
 ![Webpage titled "Time Tracker" featuring a Dashboard displaying the progress of items being manufactured.](https://github.com/Meowlory3579/time-tracker/blob/main/public/assets/ProductionTracker.gif)
 
 ## URL for deployed application
-Coming Soon
+https://best-time-tracker-666990ef70ad.herokuapp.com/
 
 ## Credentials for deployed application
 For a manger's view:  
